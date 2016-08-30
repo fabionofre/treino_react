@@ -8,12 +8,12 @@ var SearchUser = React.createClass({
         nome = this.refs.username.value;
 
         GitHubUser.getByUserName(nome).then(function(response){
-            console.log(response);
-        });
+            this.props.updateUser(response.data);
+        }.bind(this));
 
         GitHubUser.getReposByUsername(nome).then(function(response){
-            console.log(response);
-        });
+            this.props.updateRepos(response.data);
+        }.bind(this));
 
     },
 
