@@ -1,5 +1,5 @@
 import React from 'react';
-import GitHubUser '../services/GitHubUser';
+import GitHubUser from '../services/GitHubUser';
 
 class SearchUser extends React.Component{
     constructor(props){

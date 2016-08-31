@@ -1,4 +1,4 @@
-import React 'react';
+import React from 'react';
 
 class UserRepos extends React.Component{
 

@@ -1,6 +1,6 @@
-import React 'react';
+import React from 'react';
 
-import UserRepos './UserRepos';
+import UserRepos from './UserRepos';
 
 const UserInfo = ({user, repos}) => {
     var userInfo = user ? 

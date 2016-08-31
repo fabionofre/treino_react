@@ -6,7 +6,7 @@ class GitHub extends React.Component{
 
     constructor(props){
         super(props);
-        this.state {
+        this.state = {
             user: null,
             repos: [],
         };
@@ -22,7 +22,7 @@ class GitHub extends React.Component{
         this.setState({repos: repos});
     }
 
-    render: function(){
+    render(){
         return (
             <div className="container">
                 <SearchUser updateUser={this.updateUser} updateRepos={this.updateRepos}/>
